@@ -9,7 +9,7 @@
                         <div class="card  mb-2">
                             <div class="card-header p-3 pt-2">
                                 <div
-                                    class="icon icon-lg icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-xl mt-n4 position-absolute">
+                                    class="icon icon-lg icon-shape shadow-dark shadow text-center border-radius-xl mt-n4 position-absolute" style="background-color: #787d62">
                                     <i class="material-icons opacity-10">weekend</i>
                                 </div>
                                 <div class="text-end pt-1">
@@ -29,7 +29,7 @@
                         <div class="card  mb-2">
                             <div class="card-header p-3 pt-2">
                                 <div
-                                    class="icon icon-lg icon-shape bg-gradient-primary shadow-primary shadow text-center border-radius-xl mt-n4 position-absolute">
+                                    class="icon icon-lg icon-shape  shadow text-center border-radius-xl mt-n4 position-absolute" style="background-color: #FFDAB9	">
                                     <i class="material-icons opacity-10">leaderboard</i>
                                 </div>
                                 <div class="text-end pt-1">
@@ -50,7 +50,7 @@
                         <div class="card  mb-2">
                             <div class="card-header p-3 pt-2 bg-transparent">
                                 <div
-                                    class="icon icon-lg icon-shape bg-gradient-success shadow-success text-center border-radius-xl mt-n4 position-absolute">
+                                    class="icon icon-lg icon-shape  shadow-success text-center border-radius-xl mt-n4 position-absolute"  style="background-color: #D2B48C		">
                                     <i class="material-icons opacity-10">store</i>
                                 </div>
                                 <div class="text-end pt-1">
@@ -70,7 +70,7 @@
                         <div class="card mb-2">
                             <div class="card-header p-3 pt-2 bg-transparent">
                                 <div
-                                    class="icon icon-lg icon-shape bg-gradient-info shadow-info text-center border-radius-xl mt-n4 position-absolute">
+                                    class="icon icon-lg icon-shape  shadow-info text-center border-radius-xl mt-n4 position-absolute" style="background-color: #EEE8AA	">
                                     <i class="material-icons opacity-10">person_add</i>
                                 </div>
                                 <div class="text-end pt-1">
@@ -114,16 +114,27 @@
     </thead>
     <tbody>
    
-      
+        @foreach ($users as $user)
+    <tr>
+        <td>{{ $user->id }}</td>
+        <td>{{ $user->name}}</td>
+        <td>{{ $user->email }}</td>
+        <td> @foreach ($user->roles as $role)
+            {{ $role->name }}
+        @endforeach</td>
               <!-- <td><button  class="btn btn-default"><a href="edit.php?id=">Edit</a></button></td>-->
               <td>
-                
+                <form action="" >
+                @method('PUT')
+                @csrf
                 
                 <button type="submit"class="btn btn-default"><i class="material-icons text-sm me-2">edit</i></button>
                </form>
             </td> 
               <td>
-             
+                <form action="" method="post">
+                @method('DELETE')
+                @csrf
                 <button  class="btn btn-default"><lord-icon
                     src="https://cdn.lordicon.com/skkahier.json"
                     trigger="hover"
@@ -132,7 +143,7 @@
             </form>
         </td>
     </tr> 
-   
+    @endforeach
  
   </div>
       

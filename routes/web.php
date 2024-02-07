@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,9 +22,8 @@ Route::get('/', function () {
 Route::get('/homepage', function () {
     return view('home');
 });
-Route::get('/admin', function () {
-    return view('admin.dashboard');
-});
+
+Route::get('/admin',[UserController::class, 'index'])->name('admin');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
