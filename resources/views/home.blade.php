@@ -90,7 +90,7 @@
       <nav id="header-nav" class="navbar navbar-expand-lg px-3 mb-3">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
-            <img src="{{ asset('images/logoartsy.svg')}}" class="logo " style="max-width: 120px">
+            <img src="{{ asset('images/Logoartsy2.svg')}}" class="logo " style="max-width: 120px">
           </a>
           <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <svg class="navbar-icon" width="50" height="50">
@@ -225,7 +225,7 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-12">
-                  <div class="banner-item" style="background-image: url(images/banner-image1.jpg); background-repeat: no-repeat; background-position: right; height: 682px;">
+                  <div class="banner-item" style="background-image: url(images/arthome3.jpg); background-repeat: no-repeat; background-position: right; height: 682px;">
                     <div class="banner-content padding-large">
                       <h1 class="display-1 text-uppercase text-dark pb-2">wooden table set</h1>
                       <p>Aliquet donec ut arcu risus amet mattis diam gravida. Ac vestibulum quis proin in aliquam et et auctor. Amet urna est arcu euismod egestas morbi nunc lacus. Nec id rutrum mauris commodo habitant amet quisque. Velit ornare pellentesque facilisi in odio nibh.</p>                      
@@ -327,7 +327,7 @@
         <div class="row align-items-center justify-content-between g-5">
           <div class="col-lg-6">
             <div class="image-holder mb-4 jarallax">
-                <img src="{{ asset('images/single-image1.jpg')}}" alt="single" class="img-fluid jarallax-img">
+                <img src="{{ asset('images/artabout.jpg')}}" alt="single" class="img-fluid jarallax-img">
             </div>
           </div>
           <div class="col-lg-6">
@@ -369,7 +369,7 @@
                 <div class="swiper-slide">
                   <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
                     <div class="image-holder">
-                      <img src="{{ asset('images/product-item1.jpg')}}" alt="product-item" class="product-image img-fluid">
+                      <img src="{{ asset('images/artabout1.jpg')}}" alt="product-item" class="product-image img-fluid">
                     </div>
                     <div class="cart-concern">
                       <h3 class="card-title text-uppercase pt-3 text-primary">
@@ -384,7 +384,7 @@
                 <div class="swiper-slide">
                   <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
                     <div class="image-holder">
-                      <img src="{{ asset('images/product-item2.jpg')}}" alt="product-item" class="product-image img-fluid">
+                      <img src="{{ asset('images/artabout7.jpg')}}" alt="product-item" class="product-image img-fluid">
                     </div>
                     <div class="cart-concern">
                       <h3 class="card-title text-uppercase pt-3 text-primary">
@@ -401,7 +401,7 @@
                 <div class="swiper-slide">
                   <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
                     <div class="image-holder">
-                      <img src="{{ asset('images/product-item3.jpg')}}" alt="product-item" class="product-image img-fluid">
+                      <img src="{{ asset('images/artabout.jpg')}}" alt="product-item" class="product-image img-fluid" >
                     </div>
                     <div class="cart-concern">
                       <h3 class="card-title text-uppercase pt-3 text-primary">
@@ -418,7 +418,7 @@
                 <div class="swiper-slide">
                   <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
                     <div class="image-holder">
-                      <img src="{{ asset('images/product-item4.jpg')}}" alt="product-item" class="product-image img-fluid">
+                      <img src="{{ asset('images/artabout4.jpg')}}" alt="product-item" class="product-image img-fluid">
                     </div>
                     <div class="cart-concern">
                       <h3 class="card-title text-uppercase pt-3 text-primary">

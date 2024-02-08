@@ -124,7 +124,7 @@
         @endforeach</td>
               <!-- <td><button  class="btn btn-default"><a href="edit.php?id=">Edit</a></button></td>-->
               <td>
-                <form action="" >
+                <form action="{{ route('users.edit',$user->id) }}" >
                 @method('PUT')
                 @csrf
                 
@@ -132,7 +132,7 @@
                </form>
             </td> 
               <td>
-                <form action="" method="post">
+                <form action="{{ route('users.destroy',$user->id)}}" method="post">
                 @method('DELETE')
                 @csrf
                 <button  class="btn btn-default"><lord-icon

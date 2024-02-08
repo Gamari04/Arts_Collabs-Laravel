@@ -46,9 +46,9 @@ class User extends Authenticatable
     protected static function boot()
     {
         parent::boot();
-    
+
         static::created(function ($user) {
-            
+
             $defaultRole = Role::where('name', 'artist')->first();
             if ($defaultRole) {
                 $user->roles()->attach($defaultRole->id);
@@ -58,5 +58,9 @@ class User extends Authenticatable
     public function roles()
     {
         return $this->belongsToMany(Role::class);
+    }
+    public function artProjects()
+    {
+        return $this->belongsToMany(ArtProject::class);
     }
 }
