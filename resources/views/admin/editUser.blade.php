@@ -26,10 +26,13 @@
 
                         <div class="mb-3">
                             <label class="form-label">User Role</label>
-                            @foreach ($user->roles as $role)
-                            <input type="text" class="form-control border" placeholder="Enter the author"
-                                name="role" value="{{ $role->name }}">
+                            <select class="form-control border" name="role_id">
+                                @foreach ($roles as $role)
+                                    <option value="{{ $role->id }}" {{ $user->roles->contains($role) ? 'selected' : '' }}>
+                                        {{ $role->name }}
+                                    </option>
                                 @endforeach
+                            </select>
                         </div>
 
 

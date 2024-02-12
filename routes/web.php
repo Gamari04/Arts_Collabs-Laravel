@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\ArtProjectController;
+use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ShowDetailsController;
 use App\Http\Controllers\UserController;
 use App\Models\ArtProject;
 use Illuminate\Support\Facades\Route;
@@ -33,11 +35,20 @@ Route::put('/admin/{user}', [UserController::class, 'update'])->name('users.upda
 
 //routes of artProject
 
-Route::get('/project',[ArtProjectController::class, 'index'])->name('admin.project');
+Route::get('/project',[ArtProjectController::class, 'index'])->name('project');
 Route::post('/project/store', [ArtProjectController::class, 'store'])->name('store');
-Route::delete('/project/{user}', [ArtProjectController::class, 'destroy'])->name('users.destroy');
-Route::get('/project/{user}/edit', [ArtProjectController::class, 'edit'])->name('users.edit');
-Route::put('/project/{user}', [ArtProjectController::class, 'update'])->name('users.update');
+Route::delete('/project/{user}', [ArtProjectController::class, 'destroy'])->name('.destroy');
+Route::get('/project/{user}/edit', [ArtProjectController::class, 'edit'])->name('.edit');
+Route::put('/project/{user}', [ArtProjectController::class, 'update'])->name('.update');
+
+
+Route::get('/details',[ShowDetailsController::class, 'index']);
+
+
+//routes pf partners
+
+Route::get('/partner',[PartnerController::class, 'index'])->name('partner');
+Route::post('/partner/store', [PartnerController::class, 'store'])->name('partner.store');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

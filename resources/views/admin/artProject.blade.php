@@ -1,5 +1,5 @@
 
-@include('admin.header');
+@include('admin.header')
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +22,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -47,6 +47,18 @@
                             </textarea>
 
                         </div>
+
+                       <div>
+                        <label for="partners">Sélectionner des partenaires :</label>
+                        <select class="form-control border" name="partner_id">
+                            @foreach ($partners as $partner)
+                                <option value="{{ $partner->id }}" >
+                                    {{ $partner->name }}
+                                </option>
+                            @endforeach
+                        </select>
+                       </div>
+
 
                         <div class="mb-3">
                             <label class="form-label">Project Status</label>
@@ -94,7 +106,10 @@
 <div class="pdf-list d-flex justify-content--start flex-wrap books">
      @foreach ($projects as $project)
          <div class="col-3  ">
-            <img src="{{ asset('images/byedbook.jpg') }}" class="w-50" alt="Book Cover">
+       
+              @foreach($project->getMedia('images') as $image)
+                <img src="{{ $image->getUrl() }}" alt="project image" class="w-75 h-75">
+            @endforeach
             <div class="card-body">
                 <h5 class="card-title">
                    
@@ -102,27 +117,35 @@
                  
                 </h5>
                 <p class="card-text">
-                    <i><b>By:
+                    <i><b>{{ $project->title }}
                             
                             <br>
                         </b></i>
 
+                
                 <p>
-                 <b>Genre :</b> 
+                  <b>Description : {{ $project->description }}</b> 
                 </p>
                 <p>
-                  <b>Description :</b> 
+                   <b> Start Date : {{ $project->start_date }}</b>
                 </p>
                 <p>
-                   <b> Publication Year :</b>
+                  <b> End Date :{{ $project->end_date }} </b> 
                 </p>
-                <p>
-                  <b> Total Copies : </b> 
-                </p>
-                <p>
-                 <b>Available Copies : </b>  
-                </p>
-                 <div class="card-footer d-flex justify-content-evenly ">
+                <p>  
+                    <b> Partner :
+                      
+                        {{ $project->partner->name }} 
+                       
+                         </b> 
+                       
+                  </p>
+                  <a href="details">
+                  <button type="button" class="btn text-dark"  d style="background-color: #E9967A " >
+                    Show Details
+                </button>
+            </a>
+                 {{-- <div class="card-footer d-flex justify-content-evenly ">
                     <form action="" >
                         @method('PUT')
                         @csrf
@@ -136,7 +159,7 @@
                         <button type="submit"class="btn btn-secondary">Delete</button>
                     </form>
                
-                 </div>
+                 </div> --}}
                 
          
                 <!-- <a href="uploads/files/" class="btn btn-success">Open</a>

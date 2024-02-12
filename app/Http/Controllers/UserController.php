@@ -19,9 +19,10 @@ class UserController extends Controller
         $user->delete();
         return redirect()->route('admin');
     }
-    public function edit(User $user)
+    public function edit($id)
     {
 
+        $user = User::findOrFail($id);
         $roles = Role::all();
 
         return view('admin.editUser', compact('user', 'roles'));
@@ -29,7 +30,7 @@ class UserController extends Controller
     public function update(Request $request, User $user)
     {
 
-       
+        $user->roles()->sync([$request->input('role_id')]);
         $user->update($request->all());
         return redirect()->route('admin');
     }

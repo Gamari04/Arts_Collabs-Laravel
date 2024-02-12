@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\ArtProject;
 use App\Http\Requests\StoreArtProjectRequest;
 use App\Http\Requests\UpdateArtProjectRequest;
+use App\Models\Partner;
 use Illuminate\Http\Request;
 
 class ArtProjectController extends Controller
@@ -16,8 +17,9 @@ class ArtProjectController extends Controller
      */
     public function index()
     {
-        $projects=ArtProject::all();
-        return view('admin.artProject', compact('projects'));
+        $projects = ArtProject::with('partner')->get();
+        $partners=Partner::all();
+        return view('admin.artProject', compact('projects','partners'));
     }
 
     /**
@@ -41,7 +43,7 @@ class ArtProjectController extends Controller
     {
         $projects = ArtProject::create($request->all());
         $projects->addMediaFromRequest('image')->toMediaCollection('images');
-        return redirect()->route('admin.project');
+        return redirect()->route('project');
     }
 
     /**
