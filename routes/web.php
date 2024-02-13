@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ArtProjectController;
+use App\Http\Controllers\ArtProjectUser;
 use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ShowDetailsController;
@@ -28,6 +29,8 @@ Route::get('/homepage', function () {
     return view('home');
 });
 //routes of users
+Route::middleware(['auth','checkAdmin'])->group(function () {
+
 Route::get('/admin',[UserController::class, 'index'])->name('admin');
 Route::delete('/admin/{user}', [UserController::class, 'destroy'])->name('users.destroy');
 Route::get('/admin/{user}/edit', [UserController::class, 'edit'])->name('users.edit');
@@ -42,14 +45,16 @@ Route::get('/project/{user}/edit', [ArtProjectController::class, 'edit'])->name(
 Route::put('/project/{user}', [ArtProjectController::class, 'update'])->name('.update');
 
 
-Route::get('/details',[ShowDetailsController::class, 'index']);
+Route::get('/details{artProject}',[ArtProjectController::class, 'show'])->name('details');
+
+Route::post('assign/{artProject}',[ArtProjectUser::class, 'store'])->name('assign');
 
 
 //routes pf partners
 
 Route::get('/partner',[PartnerController::class, 'index'])->name('partner');
 Route::post('/partner/store', [PartnerController::class, 'store'])->name('partner.store');
-
+});
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

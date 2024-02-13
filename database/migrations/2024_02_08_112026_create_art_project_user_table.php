@@ -17,10 +17,12 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('art_project_id');
-            $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('art_project_id')->references('id')->on('art_projects')->onDelete('cascade');
+            
+            $table->timestamps();
+
         });
     }
 

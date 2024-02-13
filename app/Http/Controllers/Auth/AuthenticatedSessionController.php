@@ -28,8 +28,20 @@ class AuthenticatedSessionController extends Controller
         $request->authenticate();
 
         $request->session()->regenerate();
+        $user = Auth::user();
+
+        foreach($user->roles as $role)
+        {
+        if ($role->name ==='admin') {
+           
+            return redirect()->intended('admin');
+        } elseif ($role->name ==='artist') {
+        
+        return redirect()->intended('homepage');
+       }
 
         return redirect()->intended(RouteServiceProvider::HOME);
+       }
     }
 
     /**

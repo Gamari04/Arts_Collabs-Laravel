@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   
 </head>
 
 <body>
@@ -103,9 +104,9 @@
     </div>
 
 
-<div class="pdf-list d-flex justify-content--start flex-wrap books">
+<div class="pdf-list d-flex justify-content--start flex-wrap ">
      @foreach ($projects as $project)
-         <div class="col-3  ">
+         <div class="col-3  card">
        
               @foreach($project->getMedia('images') as $image)
                 <img src="{{ $image->getUrl() }}" alt="project image" class="w-75 h-75">
@@ -123,9 +124,9 @@
                         </b></i>
 
                 
-                <p>
+                {{-- <p>
                   <b>Description : {{ $project->description }}</b> 
-                </p>
+                </p> --}}
                 <p>
                    <b> Start Date : {{ $project->start_date }}</b>
                 </p>
@@ -140,7 +141,7 @@
                          </b> 
                        
                   </p>
-                  <a href="details">
+                  <a href="{{ route('details',$project) }}">
                   <button type="button" class="btn text-dark"  d style="background-color: #E9967A " >
                     Show Details
                 </button>

@@ -6,6 +6,7 @@ use App\Models\ArtProject;
 use App\Http\Requests\StoreArtProjectRequest;
 use App\Http\Requests\UpdateArtProjectRequest;
 use App\Models\Partner;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class ArtProjectController extends Controller
@@ -48,13 +49,17 @@ class ArtProjectController extends Controller
 
     /**
      * Display the specified resource.
-     *
-     * @param  \App\Models\ArtProject  $artProject
-     * @return \Illuminate\Http\Response
+ 
      */
     public function show(ArtProject $artProject)
     {
-        //
+      
+        {
+      
+                $users=User::all();
+                return view('admin.showDetails', compact('artProject','users'));
+            
+        }
     }
 
     /**
