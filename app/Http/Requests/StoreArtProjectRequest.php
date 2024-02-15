@@ -24,7 +24,11 @@ class StoreArtProjectRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title' => 'required|min:3',
+            'discription' => 'required|min:3',
+            'start_date' => 'required',
+            'end_date' => 'required',
+            'partner_id' => 'required'
         ];
     }
 }

@@ -25,9 +25,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/homepage', function () {
-    return view('home');
-});
+Route::get('/homepage',[ArtProjectController::class,'showProject']);
+Route::get('/homepage',[ArtProjectController::class,'showProject'])->name('home');
 //routes of users
 Route::middleware(['auth','checkAdmin'])->group(function () {
 
@@ -40,9 +39,10 @@ Route::put('/admin/{user}', [UserController::class, 'update'])->name('users.upda
 
 Route::get('/project',[ArtProjectController::class, 'index'])->name('project');
 Route::post('/project/store', [ArtProjectController::class, 'store'])->name('store');
-Route::delete('/project/{user}', [ArtProjectController::class, 'destroy'])->name('.destroy');
-Route::get('/project/{user}/edit', [ArtProjectController::class, 'edit'])->name('.edit');
-Route::put('/project/{user}', [ArtProjectController::class, 'update'])->name('.update');
+Route::delete('/project/{artProject}', [ArtProjectController::class, 'destroy'])->name('project.destroy');
+Route::get('/project/{artProject}/edit', [ArtProjectController::class, 'edit'])->name('project.edit');
+Route::put('/project/{artProject}', [ArtProjectController::class, 'update'])->name('project.update');
+
 
 
 Route::get('/details{artProject}',[ArtProjectController::class, 'show'])->name('details');
@@ -55,11 +55,15 @@ Route::post('assign/{artProject}',[ArtProjectUser::class, 'store'])->name('assig
 Route::get('/partner',[PartnerController::class, 'index'])->name('partner');
 Route::post('/partner/store', [PartnerController::class, 'store'])->name('partner.store');
 });
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
-
+Route::get('/project',[ArtProjectController::class, 'index'])->name('project');
+Route::get('/details2/{artProject}',[ArtProjectController::class, 'details'])->name('details2');
+Route::post('/collaborate/{user}', [ArtProjectController::class, 'collaborate'])->name('collaborate');
 Route::middleware('auth')->group(function () {
+    
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');

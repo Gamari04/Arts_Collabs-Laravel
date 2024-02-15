@@ -1,5 +1,5 @@
 
-@include('admin.header');
+@include('admin.header')
    
     <div class="container">
         <div class="row mt-4">

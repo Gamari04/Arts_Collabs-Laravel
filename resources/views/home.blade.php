@@ -120,96 +120,12 @@
                 <li class="nav-item">
                   <a class="nav-link me-4" href="#about-us">About Us</a>
                 </li>
-                <li class="nav-item dropdown me-4">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdownPages" data-bs-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">Shop</a>
-                  <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownPages">
-                    <li>
-                      <a href="shop-sidebar.html" class="dropdown-item item-anchor">Shop Sidebar <span class="badge bg-secondary text-dark ms-2">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="shop-four-column.html" class="dropdown-item item-anchor">Shop Grid <span class="badge bg-secondary text-dark ms-2">PRO</span></a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown me-4">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdownPages" data-bs-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">Blog</a>
-                  <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownPages">
-                    <li>
-                      <a href="blog-classic.html" class="dropdown-item item-anchor">Blog Classic <span class="badge bg-secondary text-dark ms-2">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="blog-grid-four-column.html" class="dropdown-item item-anchor">Blog 4 Column <span class="badge bg-secondary text-dark ms-2">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="blog-with-sidebar.html" class="dropdown-item item-anchor">Blog With Sidebar <span class="badge bg-secondary text-dark ms-2">PRO</span></a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdownPages" data-bs-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">Pages</a>
-                  <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownPages">
-                    <li>
-                      <a href="about-us.html" class="dropdown-item item-anchor">About <span class="badge bg-secondary text-dark ms-2">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="cart.html" class="dropdown-item item-anchor">Cart <span class="badge bg-secondary text-dark ms-2">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="checkout.html" class="dropdown-item item-anchor">Checkout <span class="badge bg-secondary text-dark ms-2">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="contact.html" class="dropdown-item item-anchor">Contact <span class="badge bg-secondary text-dark ms-2">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="error-page.html" class="dropdown-item item-anchor">Error Page <span class="badge bg-secondary text-dark ms-2">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="faqs.html" class="dropdown-item item-anchor">FAQs <span class="badge bg-secondary text-dark ms-2">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="my-account.html" class="dropdown-item item-anchor">My Account <span class="badge bg-secondary text-dark ms-2">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="order-tracking.html" class="dropdown-item item-anchor">Order Tracking <span class="badge bg-secondary text-dark ms-2">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="wishlist.html" class="dropdown-item item-anchor">Wishlist <span class="badge bg-secondary text-dark ms-2">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="single-post.html" class="dropdown-item item-anchor">Single Post <span class="badge bg-secondary text-dark ms-2">PRO</span></a>
-                    </li>
-                    <li>
-                      <a href="single-product.html" class="dropdown-item item-anchor">Single Product <span class="badge bg-secondary text-dark ms-2">PRO</span></a>
-                    </li>
-                  </ul>
-                </li>
+           
                 <li class="nav-item">
-                  <div class="user-items ps-5">
-                    <ul class="d-flex justify-content-end list-unstyled">
-                      <li class="search-item pe-3" data-bs-toggle="collapse" data-bs-target="#search-box" aria-controls="search-box" aria-expanded="false" aria-label="Toggle navigation">
-                        <svg class="search" width="18" height="18">
-                          <use xlink:href="#search"></use>
-                        </svg>
-                      </li>
-                      <li class="pe-3">
-                        <a href="#">
-                          <svg class="user" width="18" height="18">
-                            <use xlink:href="#user"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="cart.html">
-                          <svg class="cart" width="18" height="18">
-                            <use xlink:href="#cart"></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                 
+                    
+                   
+                  
                 </li>
               </ul>
             </div>
@@ -219,108 +135,26 @@
     </header>
 
     <section id="billboard" class="overflow-hidden">
-      <div class="swiper main-swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
+     
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-12">
-                  <div class="banner-item" style="background-image: url(images/arthome3.jpg); background-repeat: no-repeat; background-position: right; height: 682px;">
+                  <div class="banner-item image" style="background-image: url(images/home5.jfif); background-repeat: no-repeat; background-position: right; height: 682px;">
                     <div class="banner-content padding-large">
                       <h1 class="display-1 text-uppercase text-dark pb-2">wooden table set</h1>
                       <p>Aliquet donec ut arcu risus amet mattis diam gravida. Ac vestibulum quis proin in aliquam et et auctor. Amet urna est arcu euismod egestas morbi nunc lacus. Nec id rutrum mauris commodo habitant amet quisque. Velit ornare pellentesque facilisi in odio nibh.</p>                      
-                      <a href="shop.html" class="btn btn-medium btn-arrow position-relative mt-5">
-                        <span class="text-uppercase">Shop Now</span>            
-                        <svg class="arrow-right position-absolute" width="18" height="20">
-                          <use xlink:href="#arrow-right"></use>
-                        </svg>
-                      </a>   
+                     
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="banner-item" style="background-image: url(images/banner-image1.jpg); background-repeat: no-repeat; background-position: right; height: 682px;">
-                    <div class="banner-content padding-large">
-                      <h1 class="display-1 text-uppercase text-dark pb-2">Comfortable Sofa Set</h1>
-                      <p>Aliquet donec ut arcu risus amet mattis diam gravida. Ac vestibulum quis proin in aliquam et et auctor. Amet urna est arcu euismod egestas morbi nunc lacus. Nec id rutrum mauris commodo habitant amet quisque. Velit ornare pellentesque facilisi in odio nibh.
-                      </p>                                         
-                      <a href="shop.html" class="btn btn-medium btn-arrow position-relative mt-5">
-                        <span class="text-uppercase">Shop Now</span>            
-                        <svg class="arrow-right position-absolute" width="18" height="20">
-                          <use xlink:href="#arrow-right"></use>
-                        </svg>
-                      </a>   
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+         
       <div class="swiper-pagination position-absolute"></div>
     </section>
 
-    <section id="company-services" class="padding-large">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 pb-3">
-            <div class="icon-box d-flex align-items-center">
-              <div class="icon-box-icon pt-3 pe-3 pb-3 ps-3">
-                <svg class="shipping-fast">
-                  <use xlink:href="#shipping-fast" />
-                </svg>
-              </div>
-              <div class="icon-box-content ps-3">
-                <h3 class="card-title text-uppercase text-dark">Quick delivery</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 pb-3">
-            <div class="icon-box d-flex align-items-center">
-              <div class="icon-box-icon pt-3 pe-3 pb-3 ps-3">
-                <svg class="shopping-cart">
-                  <use xlink:href="#shopping-cart" />
-                </svg>
-              </div>
-              <div class="icon-box-content ps-3">
-                <h3 class="card-title text-uppercase text-dark">Pick up in store</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 pb-3">
-            <div class="icon-box d-flex align-items-center">
-              <div class="icon-box-icon pt-3 pe-3 pb-3 ps-3">
-                <svg class="gift">
-                  <use xlink:href="#gift" />
-                </svg>
-              </div>
-              <div class="icon-box-content ps-3">
-                <h3 class="card-title text-uppercase text-dark">Special Packaging</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 pb-3">
-            <div class="icon-box d-flex align-items-center">
-              <div class="icon-box-icon pt-3 pe-3 pb-3 ps-3">
-                <svg class="return">
-                  <use xlink:href="#return" />
-                </svg>
-              </div>
-              <div class="icon-box-content ps-3">
-                <h3 class="card-title text-uppercase text-dark">Return & refund policy</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
     <section id="about-us">
       <div class="container-fluid">
@@ -336,12 +170,7 @@
                 <h2 class="display-2 text-uppercase text-dark pb-2">About Us</h2>
                 <p class="pb-3">Ac varius lectus tellus tellus quisque tristique aenean. Volutpat velit nulla eu iaculis risus in urna. Eu morbi vel purus velit dui vel egestas purus sed. Eget turpis tincidunt faucibus montes arcu in nullam tortor orci. Nulla tellus sed purus vestibulum sagittis pretium donec nec mattis ollis porta sit ut.</p>
                 <p>Facilisi ut vulputate volutpat a aliquet. Facilisis sed quis pretium amet hac. Justo tristique sagittis sodales viverra venenatis integer fringilla. </p>
-                <a href="about-us.html" class="btn btn-medium btn-arrow outline-dark position-relative mt-3">
-                  <span class="text-uppercase">About us</span>            
-                  <svg class="arrow-right position-absolute" width="18" height="20">
-                    <use xlink:href="#arrow-right"></use>
-                  </svg>
-                </a>  
+             
               </div>
             </div>
           </div>
@@ -349,130 +178,7 @@
       </div>
     </section>
 
-    <section id="featured-products" class="product-store position-relative padding-large">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="display-header pb-3 d-flex justify-content-between flex-wrap col-md-12">
-            <h2 class="display-2 text-dark text-uppercase">Our Featured Products</h2> 
-            <a href="shop.html" class="btn btn-medium btn-arrow btn-normal position-relative">
-              <span class="text-uppercase">Shop All</span>            
-              <svg class="arrow-right position-absolute" width="18" height="20">
-                <use xlink:href="#arrow-right"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div id="featured-swiper" class="product-swiper col-md-12">
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
-                    <div class="image-holder">
-                      <img src="{{ asset('images/artabout1.jpg')}}" alt="product-item" class="product-image img-fluid">
-                    </div>
-                    <div class="cart-concern">
-                      <h3 class="card-title text-uppercase pt-3 text-primary">
-                        <a href="single-product.html" class="text-primary">Black Sofa Set</a>
-                      </h3>
-                      <div class="cart-info">
-                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART"><span>$200</span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
-                    <div class="image-holder">
-                      <img src="{{ asset('images/artabout7.jpg')}}" alt="product-item" class="product-image img-fluid">
-                    </div>
-                    <div class="cart-concern">
-                      <h3 class="card-title text-uppercase pt-3 text-primary">
-                        <a href="single-product.html" class="text-primary">Circle Dining Table</a>
-                      </h3>
-                      <div class="cart-info">
-                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
-                          <span>$200</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
-                    <div class="image-holder">
-                      <img src="{{ asset('images/artabout.jpg')}}" alt="product-item" class="product-image img-fluid" >
-                    </div>
-                    <div class="cart-concern">
-                      <h3 class="card-title text-uppercase pt-3 text-primary">
-                        <a href="single-product.html" class="text-primary">Minimal Sofa</a>
-                      </h3>
-                      <div class="cart-info">
-                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
-                          <span>$200</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
-                    <div class="image-holder">
-                      <img src="{{ asset('images/artabout4.jpg')}}" alt="product-item" class="product-image img-fluid">
-                    </div>
-                    <div class="cart-concern">
-                      <h3 class="card-title text-uppercase pt-3 text-primary">
-                        <a href="single-product.html" class="text-primary">Pattern Tea Table</a>
-                      </h3>
-                      <div class="cart-info">
-                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
-                          <span>$200</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
-                    <div class="image-holder">
-                      <img src="{{ asset('images/product-item5.jpg')}}" alt="product-item" class="product-image img-fluid">
-                    </div>
-                    <div class="cart-concern">
-                      <h3 class="card-title text-uppercase pt-3 text-primary">
-                        <a href="single-product.html" class="text-primary">Black Sofa Set</a>
-                      </h3>
-                      <div class="cart-info">
-                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
-                          <span>$200</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
-                    <div class="image-holder">
-                      <img src="{{ asset('images/product-item6.jpg')}}" alt="product-item" class="product-image img-fluid">
-                    </div>
-                    <div class="cart-concern">
-                      <h3 class="card-title text-uppercase pt-3 text-primary">
-                        <a href="single-product.html" class="text-primary">Minimal Sofa</a>
-                      </h3>
-                      <div class="cart-info">
-                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
-                          <span>$200</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination text-center mt-5"></div>
-          </div>
-        </div>
-      </div>      
-    </section>
+   
 
     <section id="testimonials" class="position-relative">
       <div class="container">
@@ -526,33 +232,38 @@
         <div class="row">
           <div class="swiper collection-swiper">
             <div class="swiper-wrapper">
+
+              @foreach ($projects as $project)
               <div class="swiper-slide overflow-hidden">
                 <div class="product-card">
                   <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
                     <h3 class="card-title text-uppercase">
-                      <a href="shop.html">Living Rooms</a>
+                      <a href="shop.html">{{ $project->title }}</a>
                     </h3>
                   </div>
                   <div class="image-overlay position-relative">
                     <div class="product-image">
-                      <img src="{{ asset('images/product-item5.jpg')}}" alt="product-item" class="product-image img-fluid">
+                      @foreach($project->getMedia('images') as $image)
+                      <img src="{{ $image->getUrl() }}"alt="product-item" class="product-image w-75 h-50">
+                  @endforeach
                       <div class="text-box box-slide position-absolute">
                         <div class="text-content p-5 bg-light">
-                          <h3>About Room</h3>
+                          <h3>{{ $project->description }}</h3>
                           <p>Assumenda temporibus quidem ipsam. fuga corporis iusto similique voluptates sint quibusdam.</p>
                           <ul>
-                            <li>Various Types of Bedroom</li>
-                            <li>Different Size of Bed</li>
-                            <li>Comfortable and Clean Room</li>
+                            <li>Start Date : {{ $project->start_date }}</li>
+                            <li>End Date :{{ $project->end_date }}</li>
+                            <li>Partner :{{ $project->partner->name }} </li>
                           </ul>
-                          <a href="#" class="btn btn-normal mt-3">Learn More</a>
+                          <a href="{{ route('details2',$project->id) }}" class="btn btn-normal mt-3">Learn More</a>
                         </div>
                       </div>
                     </div>
                   </div>                  
                 </div>
               </div>
-              <div class="swiper-slide overflow-hidden">
+              @endforeach
+              {{-- <div class="swiper-slide overflow-hidden">
                 <div class="product-card">
                   <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
                     <h3 class="card-title text-uppercase">
@@ -635,234 +346,16 @@
                   <!-- product-image -->
                   </div>                  
                 </div>
-              </div>
+              </div> --}}
             </div>
           </div>
         </div>
       </div>
       <div class="swiper-pagination position-absolute text-center"></div>
     </section>
+    
 
-    <section class="subscribe">
-      <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-8">
-            <div class="subscribe-content padding-large">
-              <div class="subscribe-header">
-                <h2 class="display-4">Get offers & discounts by subscribing us</h2>
-              </div>
-              <form id="form">
-                <input type="text" name="email" placeholder="Enter Your Email Addresss" class="w-100 bg-light border-0 ps-5 fst-italic">
-                <button class="btn btn-full btn-black text-uppercase">Subscribe Now</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="trending-products" class="product-store padding-large">
-      <div class="container-fluid">
-        <div class="row overflow-hidden">
-          <div class="display-header pb-3 d-flex justify-content-between col-md-12">
-            <h2 class="display-2 text-dark text-uppercase">Trending products</h2>
-            <a href="shop.html" class="btn btn-medium btn-arrow btn-normal position-relative">
-              <span class="text-uppercase">Shop all</span> 
-              <svg class="arrow-right position-absolute" width="18" height="20">
-                <use xlink:href="#arrow-right"></use>
-              </svg>
-            </a>
-          </div>
-          <div id="trending-swiper" class="product-swiper col-md-12">
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
-                    <div class="image-holder">
-                      <img src="{{ asset('images/product-item1.jpg')}}" alt="product-item" class="product-image img-fluid">
-                    </div>
-                    <div class="cart-concern">
-                      <h3 class="card-title text-uppercase pt-3 text-primary">
-                        <a href="single-product.html">Black Sofa Set</a>
-                      </h3>
-                      <div class="cart-info">
-                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART"><span>$200</span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
-                    <div class="image-holder">
-                      <img src="{{ asset('images/product-item2.jpg')}}" alt="product-item" class="product-image img-fluid">
-                    </div>
-                    <div class="cart-concern">
-                      <h3 class="card-title text-uppercase pt-3 text-primary">
-                        <a href="single-product.html">Circle Dining Table</a>
-                      </h3>
-                      <div class="cart-info">
-                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
-                          <span>$200</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
-                    <div class="image-holder">
-                      <img src="{{ asset('images/product-item3.jpg')}}" alt="product-item" class="product-image img-fluid">
-                    </div>
-                    <div class="cart-concern">
-                      <h3 class="card-title text-uppercase pt-3 text-primary">
-                        <a href="single-product.html">Minimal Sofa</a>
-                      </h3>
-                      <div class="cart-info">
-                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
-                          <span>$200</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
-                    <div class="image-holder">
-                      <img src="{{ asset('images/product-item4.jpg')}}" alt="product-item" class="product-image img-fluid">
-                    </div>
-                    <div class="cart-concern">
-                      <h3 class="card-title text-uppercase pt-3 text-primary">
-                        <a href="single-product.html">Pattern Tea Table</a>
-                      </h3>
-                      <div class="cart-info">
-                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
-                          <span>$200</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
-                    <div class="image-holder">
-                      <img src="{{ asset('images/product-item5.jpg')}}" alt="product-item" class="product-image img-fluid">
-                    </div>
-                    <div class="cart-concern">
-                      <h3 class="card-title text-uppercase pt-3 text-primary">
-                        <a href="single-product.html">Black Sofa Set</a>
-                      </h3>
-                      <div class="cart-info">
-                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
-                          <span>$200</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
-                    <div class="image-holder">
-                      <img src="{{ asset('images/product-item6.jpg')}}" alt="product-item" class="product-image img-fluid">
-                    </div>
-                    <div class="cart-concern">
-                      <h3 class="card-title text-uppercase pt-3 text-primary">
-                        <a href="single-product.html">Minimal Sofa</a>
-                      </h3>
-                      <div class="cart-info">
-                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
-                          <span>$200</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-pagination text-center mt-5"></div>
-            </div>
-          </div>
-        </div>
-      </div>      
-    </section>
-
-    <section id="latest-blog">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="display-header d-flex flex-wrap justify-content-between pb-3">
-              <h2 class="display-2 text-dark text-uppercase">Read Our Articles</h2>
-              <a href="blog.html" class="btn btn-medium btn-arrow btn-normal position-relative">
-                <span class="text-uppercase">See all articles</span>            
-                <svg class="arrow-right position-absolute" width="18" height="20">
-                  <use xlink:href="#arrow-right"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="row g-3 post-grid">
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-            <div class="card-item">
-              <div class="card border-0 bg-transparent">
-                <div class="card-image">
-                  <img src="{{ asset('images/post-item1.jpg')}}" alt="" class="post-image img-fluid">
-                </div>
-              </div>
-              <div class="card-body p-0 mt-4">
-                <h3 class="card-title text-uppercase">
-                  <a href="single-post.html">Best looking interior things for bedrooms</a>
-                </h3>
-                <p>Enim ut nunc, ultrices mauris felis viverra amet. Ante sed dictum nisi suscipit ac ut faucibus pretium interdum.</p>
-                <a href="single-post.html" class="btn btn-normal text-uppercase p-0"><em>Read More</em></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-            <div class="card-item">
-              <div class="card border-0">
-                <div class="card-image">
-                  <img src="{{ asset('images/post-item2.jpg')}}" alt="" class="post-image img-fluid">
-                </div>
-              </div>
-              <div class="card-body p-0 mt-4">
-                <h3 class="card-title text-uppercase">
-                  <a href="single-post.html">Trending modern furniture design in 2022</a>
-                </h3>
-                <p>Enim ut nunc, ultrices mauris felis viverra amet. Ante sed dictum nisi suscipit ac ut faucibus pretium interdum.</p>
-                <a href="single-post.html" class="btn btn-normal text-uppercase p-0"><em>Read More</em></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-            <div class="card-item">
-              <div class="card border-0">
-                <div class="card-image">
-                  <img src="{{ asset('images/post-item3.jpg')}}" alt="" class="post-image img-fluid">
-                </div>
-              </div>
-              <div class="card-body p-0 mt-4">
-                <h3 class="card-title text-uppercase">
-                  <a href="single-post.html">Why is simple firniture design looks fabulous</a>
-                </h3>
-                <p>Enim ut nunc, ultrices mauris felis viverra amet. Ante sed dictum nisi suscipit ac ut faucibus pretium interdum.</p>
-                <a href="single-post.html" class="btn btn-normal text-uppercase p-0"><em>Read More</em></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="brand-collection" class="padding-small border-top border-bottom overflow-hidden margin-large mb-0">
-      <div class="container">
-        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
-            <a href="#"><img src="{{ asset('images/brand-logo-1.svg')}}" alt="brand"></a>
-            <a href="#"><img src="{{ asset('images/brand-logo-2.svg')}}" alt="brand"></a>
-            <a href="#"><img src="{{ asset('images/brand-logo-3.svg')}}" alt="brand"></a>
-            <a href="#"><img src="{{ asset('images/brand-logo-4.svg')}}" alt="brand"></a>
-            <a href="#"><img src="{{ asset('images/brand-logo-5.svg')}}" alt="brand"></a>
-        </div>
-      </div>
-    </section>
+    
 
     <footer id="footer" class="overflow-hidden padding-large">
       <div class="container-fluid">

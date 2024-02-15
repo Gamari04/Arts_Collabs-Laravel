@@ -21,10 +21,10 @@
   <!-- CSS Files -->
   <link rel="stylesheet" href="{{ asset('css/material-dashboard.min.css') }}">
   
-
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   
 </head>
 
 <body class="g-sidenav-show  bg-gray-200">
-  @include('admin.sidebar');
+  @include('admin.sidebar')
 <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">

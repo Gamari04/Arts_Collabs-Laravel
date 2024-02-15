@@ -39,12 +39,18 @@
                             <label class="form-label">Project Title</label>
                             <input type="text" class="form-control border" placeholder="Enter a title"
                                 name="title">
+                                @error('title')
+                                  <div class="text-danger">{{ $message }}</div>  
+                                @enderror
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label"> Project Description</label>
                         <textarea type="text" class="form-control border" placeholder="Enter a description"
                                 name="description">
+                                @error('description')
+                                <div class="text-danger">{{ $message }}</div>  
+                              @enderror
                             </textarea>
 
                         </div>
@@ -58,6 +64,7 @@
                                 </option>
                             @endforeach
                         </select>
+                    
                        </div>
 
 
@@ -65,6 +72,7 @@
                             <label class="form-label">Project Status</label>
                             <input type="text" class="form-control border" placeholder="Enter the author"
                                 name="status">
+                                
                         </div>
 
 
@@ -74,20 +82,25 @@
                             <label class="form-label">Date of Start</label>
                             <input type="date" class="form-control border" placeholder="Enter the year of publication"
                                 name="start_date">
+                                @error('start_date')
+                                <div class="text-danger">{{ $message }}</div>  
+                              @enderror
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Date of End</label>
                             <input type="date" class="form-control border" placeholder="Enter the year of publication"
                                 name="end_date">
+                                @error('end_date')
+                                <div class="text-danger">{{ $message }}</div>  
+                              @enderror
                         </div>
-
-                       
-
-                       
 
                         <div class="mb-3">
                             <label class="form-label"> Project image </label>
                             <input type="file" class="form-control border" name="image">
+                            @error('image')
+                            <div class="text-danger">{{ $message }}</div>  
+                          @enderror
                         </div>
 
                         

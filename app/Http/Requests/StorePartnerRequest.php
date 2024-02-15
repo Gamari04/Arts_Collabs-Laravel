@@ -24,7 +24,13 @@ class StorePartnerRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' => 'required|min:3',
+            'contact_email' => 'required|min:3',
+            'contact_phone' => 'required',
+            'address' => 'required',
+            'city' => 'required',
+            'country' => 'required',
+            'additional_info' => 'required',
         ];
     }
 }

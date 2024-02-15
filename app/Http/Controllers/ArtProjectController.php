@@ -23,6 +23,16 @@ class ArtProjectController extends Controller
         return view('admin.artProject', compact('projects','partners'));
     }
 
+
+
+    public function showProject()
+    {
+        $projects = ArtProject::with('partner')->get();
+        $partners=Partner::all();
+        return view('home', compact('projects','partners'));
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *
@@ -54,10 +64,21 @@ class ArtProjectController extends Controller
     public function show(ArtProject $artProject)
     {
       
-        {
+        {       
       
                 $users=User::all();
                 return view('admin.showDetails', compact('artProject','users'));
+            
+        }
+    }
+    public function details(ArtProject $artProject)
+    {
+      
+        {
+      
+                $users=User::all();
+                
+                return view('admin.showDetails2', compact('artProject','users'));
             
         }
     }
@@ -65,24 +86,23 @@ class ArtProjectController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\ArtProject  $artProject
-     * @return \Illuminate\Http\Response
+    
      */
-    public function edit(ArtProject $artProject)
+    public function edit($id)
     {
-        //
+        $artProject = ArtProject::findOrFail($id);
+        $users = User::all();
+
+        return view('admin.editProject', compact('artProject', 'users'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \App\Http\Requests\UpdateArtProjectRequest  $request
-     * @param  \App\Models\ArtProject  $artProject
-     * @return \Illuminate\Http\Response
-     */
+  
     public function update(Request $request, ArtProject $artProject)
     {
-        //
+        $userIds = $request->users;
+        $artProject->users()->sync($userIds);
+        $artProject->update([$request->all(), $request->input('partner_id')]);
+        return redirect()->route('project');
     }
 
     /**
@@ -93,6 +113,15 @@ class ArtProjectController extends Controller
      */
     public function destroy(ArtProject $artProject)
     {
-        //
+      
+        $artProject->delete();
+        return redirect()->route('admin.artProject');
+    }
+    public function collaborate(Request $request, User $user)
+    {
+     
+      $user->artProjects()->syncWithoutDetaching([$request->art_project_id=> ['status'=>1]]);
+      return redirect()->route('home', $request->art_project_id)->with('success', 'Collaboration requested successfully.');
+
     }
 }

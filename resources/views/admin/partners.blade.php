@@ -26,6 +26,9 @@
                         <label class="form-label">Name of the Partner</label>
                         <input type="text" class="form-control border" placeholder="Enter a title"
                             name="name">
+                            @error('name')
+                            <div class="text-danger">{{ $message }}</div>  
+                          @enderror
                     </div>
 
     
@@ -33,6 +36,9 @@
                         <label class="form-label">Contact Email</label>
                         <input type="email" class="form-control border" placeholder="Enter a title"
                             name="contact_email">
+                            @error('contact_email')
+                            <div class="text-danger">{{ $message }}</div>  
+                          @enderror
                     </div>
 
                  
@@ -42,6 +48,9 @@
                         <label class="form-label">Contact Phone</label>
                         <input type="text" class="form-control border" placeholder="Enter the author"
                             name="contact_phone">
+                            @error('contact_phone')
+                            <div class="text-danger">{{ $message }}</div>  
+                          @enderror
                     </div>
 
 
@@ -51,11 +60,17 @@
                         <label class="form-label">Adress</label>
                         <input type="text" class="form-control border" placeholder="Enter the year of publication"
                             name="address">
+                            @error('address')
+                            <div class="text-danger">{{ $message }}</div>  
+                          @enderror
                     </div>
                     <div class="mb-3">
                         <label class="form-label">City</label>
                         <input type="text" class="form-control border" placeholder="Enter the year of publication"
                             name="city">
+                            @error('city')
+                            <div class="text-danger">{{ $message }}</div>  
+                          @enderror
                     </div>
 
                    
@@ -64,7 +79,11 @@
 
                     <div class="mb-3">
                         <label class="form-label">Country</label>
-                        <input type="text" class="form-control border" name="country">
+                        <input type="text" class="form-control border" name="country"> 
+                        @error('country')
+                        <div class="text-danger">{{ $message }}</div>  
+                      @enderror
+
                     </div>
 
                     <div class="mb-3">
@@ -72,12 +91,14 @@
                     <textarea type="text" class="form-control border" placeholder="Enter a description"
                             name="additional_info">
                         </textarea>
-
+                        @error('additional_info')
+                        <div class="text-danger">{{ $message }}</div>  
+                      @enderror
                     </div>
 
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary" >Add Project</button>
+                        <button type="submit" class="btn btn-primary" >Add Partner</button>
                     </div>
                 </form>
             </div>
